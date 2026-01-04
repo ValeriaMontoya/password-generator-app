@@ -22,8 +22,12 @@ export default function generatePassword(settings) {
 
   let generatedPassword = '';
 
+  // Use cryptographically secure random values
+  const randomValues = new Uint32Array(settings.length);
+  crypto.getRandomValues(randomValues);
+
   for (let index = 0; index < settings.length; index++) {
-    const randomIndex = Math.floor(Math.random() * characterPool.length);
+    const randomIndex = randomValues[index] % characterPool.length;
     const randomCharacter = characterPool[randomIndex];
     generatedPassword += randomCharacter;
   }

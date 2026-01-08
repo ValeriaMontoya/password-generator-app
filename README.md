@@ -2,16 +2,6 @@
 
 This is a solution to the [Password generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-- [Author](#author)
-
 ## Overview
 
 ### The challenge
@@ -39,6 +29,9 @@ Users should be able to:
 - [x] JavaScript
 - [x] [Vite](https://vite.dev/)
 - [x] [pnpm](https://pnpm.io/)
+
+> [!NOTE]
+> I've also created an alternative implementation using SolidJS, which is available in the `solidjs` branch.
 
 ### What I learned
 

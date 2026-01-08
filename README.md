@@ -2,16 +2,6 @@
 
 This is a solution to the [Password generator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/password-generator-app-Mr8CLycqjh). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-- [Author](#author)
-
 ## Overview
 
 ### The challenge
@@ -36,35 +26,17 @@ Users should be able to:
 - [x] Flexbox
 - [x] [Syntactically Awesome Style Sheets](https://sass-lang.com/)
 - [x] Mobile-first workflow
-- [x] JavaScript
+- [x] JavaScript ([SolidJS](https://solidjs.com/))
 - [x] [Vite](https://vite.dev/)
 - [x] [pnpm](https://pnpm.io/)
 
 ### What I learned
 
-This project was a fantastic opportunity to dive deeper into JavaScript DOM manipulation and strengthen my understanding of user interactions. Here are the key things I'm taking away:
+This project was a great opportunity to deepen my understanding of SolidJS and its reactive programming model. I learned how to:
 
-**Password generation logic**: I learned to dynamically build character sets based on user preferences and generate passwords using cryptographically secure random number generation with `crypto.getRandomValues()`.
-
-**Password strength algorithm**: I got to implement a real password strength checker that evaluates both length and character variety, creating a meaningful rating system with visual feedback.
-
-**Dynamic UI state management**: I learned to manage complex UI states with the strength indicator bars, creating a system that dynamically adds/removes CSS classes based on password strength while keeping the code clean and maintainable.
-
-**Modern clipboard API integration**: This was my first time working with the async Clipboard API. I learned to handle the promise-based API and provide user feedback when the copy operation succeeds or fails.
-
-```js
-async function handleCopyPassword() {
-  try {
-    await navigator.clipboard.writeText(passwordInput.value);
-    copiedFeedback.classList.remove('hidden');
-    setTimeout(() => copiedFeedback.classList.add('hidden'), 4000);
-  } catch (error) {
-    copiedFeedback.textContent = 'Failed to copy';
-    copiedFeedback.classList.remove('hidden');
-    setTimeout(() => copiedFeedback.classList.add('hidden'), 4000);
-  }
-}
-```
+- Use SolidJS's signals for efficient state management
+- Handle user interactions and events in a reactive way
+- Structure a SolidJS application with proper component composition
 
 ## Author
 
